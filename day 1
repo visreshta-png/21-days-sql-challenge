@@ -1,0 +1,16 @@
+DAY1: practice questions:  (03-11-05)
+-- 1. Retrieve all columns from the patients table.
+select * from sqlchallenge.patients;
+
+-- 2. Select only the patient_id, name, and age columns from the patients table. 
+SELECT patient_id, name as patient_name, age as patient_age
+FROM sqlchallenge.patients;  
+  
+-- 3. Display the first 10 records from the services_weekly table. 
+SELECT * FROM sqlchallenge.services_weekly
+LIMIT 10; 
+
+-- DAY 1 challenge
+-- Question: List all unique hospital services available in the hospital. 
+SELECT DISTINCT service
+FROM sqlchallenge.services_weekly;
